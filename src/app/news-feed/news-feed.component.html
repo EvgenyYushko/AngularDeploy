@@ -1,0 +1,12 @@
+<div class="body">
+    <div *ngFor="let product of products">
+        <!-- <app-post [product] = "product"></app-post> не нашёл способа передать product в компонент и там его обработать, поэтому сделал в текущем копопоненте через div -->
+        <app-post 
+            [name] = product.name 
+            [price] = product.price 
+            [img] = product.img 
+            [src] = product.src 
+            [description] = product.description>
+        </app-post>
+    </div>
+</div>
